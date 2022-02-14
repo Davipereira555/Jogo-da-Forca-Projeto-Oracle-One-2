@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOGO DA FORCA</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+       
+    </header>
+    <nav class="nav">
+        <h6>JOGO DA FORCA</h6>
+                          
+    </nav> 
+        
+    <section>   
+          
+        <div class="modal-jogo"> 
+            <div class="modal-aviso">                             
+                <div class="titulo-modal">WINNER!! </div>
+                <div class="img-modal"></div>
+                <div class="fecha-modal"> 
+                <div class="resposta">caca</div>
+                    <hr>                   
+                    <button type="submit" class="botao" id="botao-novojogo">Novo</button>                                 
+                </div>
+                
+            </div>                
+           
+            <div class="acoes"> 
+                <div class="texto">ESCOLHA UMA PALAVRA</div>               
+                <input type="password" method = "post" name="texto-jogo" class="palavra" id="palavra" placeholder="Escreva uma nova palavara ">
+                <input type="text" name="texto-jogo" class="palavra" id="dica" placeholder="Dica ">
+                <button type="submit" class="botao" id="botao">PLAY</button>                
+            </div>
+            <div class="acoes" id="acoes">                  
+                <div class="texto"> JOGUE AGORA</div>
+                <button type="submit" id="botao-random">ALEATORIO</button>
+                
+            </div>
+
+            <button type="submit" class="botao" id="botao-reset">RESET</button>
+            <div class="dica"></div>
+            <div class="caixa-texto">            
+            </div>
+            <div class="palavras-lixo">                
+            </div>
+            <div class="canvas">
+                <canvas width="400px" height="400px"></canvas>
+            </div>
+         
+        </div>
+        
+        
+    </section>
+    <footer>
+        <p>&copy; 2022 - Todos os direitos reservados, desenvolvido por Davi Pereira <a href="https://github.com/Davipereira555" target="_blank">github</a></p>
+      </footer>
+    <script src="./js/acoes.js"></script>
+    <script src="./js/principal.js"></script>
+    <script src="./js/forca.js"></script>
+</body>
+
+</html>

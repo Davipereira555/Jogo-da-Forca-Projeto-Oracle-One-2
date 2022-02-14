@@ -1,0 +1,202 @@
+:root{
+ 
+  --bgColor: rgba(141, 97, 97, 0.658);
+  --bgColorNav: #d44444;
+  --bShadow: #ff0000 0px 5px 15px 5px;
+  --bgColorCaixaTexto: white;
+  --bgColorBotao: #d44444;
+  --bgColorCanvas: rgba(245, 245, 245, 0.322);
+}
+
+
+body{
+  font-family: Stencil Std, Monospace;
+  font-weight: 800;
+  background-color: var(--bgColor);
+  margin: 0px;
+  padding: 0px;
+}
+section{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+ 
+  
+}
+
+
+.nav{
+  font-style: italic;
+  font-size: 80px;
+  font-family: Stencil Std, fantasy;
+  font-weight: 800;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 50px;
+  background-color: var(--bgColorNav);
+}
+.modal-jogo{
+  display: grid;
+  justify-items: center;
+  height: auto;
+  width: 80%;
+  border-radius: 100px;
+  box-shadow: var(--bShadow);    
+}
+.caixa-texto{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; 
+}
+.span{
+  font-weight: 800;
+  border-bottom: 4px solid black;
+  font-size: 25px;
+  font-family: Stencil Std, Monospace, cursive;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 50px;
+  width: 50px;
+  
+}
+.canvas{
+  border-radius:8px;
+  margin: 10px;
+  display: none;
+  width: 400px;
+  height: 250px;
+  background-color: var(--bgColorCanvas);
+}
+.botao{
+  font-weight: 8000;
+  font-family: Stencil Std, monospace;
+  font-size: 20px;
+  margin-left: 5px;
+  background-color: var(--bgColorBotao);
+  width: 75px;
+  height: 35px;
+  border-radius: 6px;
+}
+.acoes {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.palavra{
+  margin-left: 5px;
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  
+}
+.palavras-lixo{
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; 
+ 
+}
+.span-lixo{    
+  font-size: 50px;
+  font-family:Stencil Std, monospace;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: rgb(196, 13, 13);
+}
+.modal-aviso{
+  margin-top: 10px;
+  display: block;
+  height:250px ;
+  width: 800px;
+  border-radius: 10px 20px 10px 20px;
+  background-color: var(--bgColorCaixaTexto);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.fecha-modal{
+  
+  text-align: center;
+  padding-right: 10px;
+  margin: 10px;
+}
+
+@keyframes titulo-modal {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 0.9; }
+}
+.titulo-modal{
+  animation: titulo-modal .40s linear infinite;
+
+  margin: 15px;
+  color: yellowgreen;
+  font-family: Stencil Std, monospace;
+  text-align: center;
+  font-weight: 800;
+}
+.img-modal, img{
+  text-align: center;
+  height: 100px;
+}
+.modal-aviso{
+  display: none;
+  position: absolute;
+}
+#botao-reset{
+  font-weight: 800;
+  margin-top: 20px;
+  display: none;
+}
+.resposta{
+  font-weight: 600;
+  margin-top: 5px;
+  font-size: 20px;
+  font-family: Stencil Std, monospace;
+}
+.dica{
+  margin-top: 20px;
+  display: none;
+  font-size: 20px;
+}
+#botao-random {
+  font-weight: 800;
+  font-family: Stencil Std, monospace;
+  font-size: 17px;
+  margin-left: 5px;
+  background-color: var(--bgColorBotao);
+  width: 105px;
+  height: 35px;
+  border-radius: 6px;
+}
+.texto{
+  font-size: 25px;
+  font-optical-sizing: 4px;
+}
+
+footer {
+  position: absolute;
+  position: fixed;
+	bottom: 0;
+  font-weight: 0;
+  font-family: Stencil Std, monospace;
+  font-size: 17px;
+  padding-bottom: 25px;
+  background-color: #d44444;
+  text-align: center;
+  margin: 0px;
+  width: 100vw;
+  height: 30px;
+}
